@@ -7,7 +7,7 @@ const Task = require("./task");
 /**
  * mongoose middleware: let us execute some operation based on some events.
  * for ex: run some code before/after save document
- * to use this middleware function, i should use mongoose schema first
+ * to use this middleware functions, i should use mongoose schema first
  */
 
 // create user's schema
@@ -74,8 +74,9 @@ const userSchema = new mongoose.Schema(
 
 // * virtual property will not stored in db
 // add virtual property to user schema (add 'tasks' property to 'user' document)
-// this done by create a relation between to collections 'Task','User'
-// @par1: name of this property     @par2: config each field
+// this done by create a relation between tow collections 'Task','User'
+// @par1: name of this property
+// @par2: config each field
 userSchema.virtual("tasks", {
   ref: "Task", // to relate this field to 'Task' collection, should write the same name of collection model
   localField: "_id", // filed in this collection model that will be compared with the field (owner) in another collection (Task)

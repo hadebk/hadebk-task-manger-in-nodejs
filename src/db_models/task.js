@@ -19,8 +19,8 @@ const taskSchema = new mongoose.Schema(
     },
   },
   {
-    // timestamps: give us time when new user created and last update for this user
-    // user collection will include those to new properties(columns):
+    // timestamps: give us time when new task created or last update for this task
+    // tasks collection will include those to new properties(columns):
     //    1- createdAt
     //    2- updatedAt
     timestamps: true,

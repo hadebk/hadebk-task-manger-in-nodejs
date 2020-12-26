@@ -89,7 +89,7 @@ router.delete("/users/me", auth, async (req, res) => {
   }
 });
 //-----------------------------------------------------------------------------------------------------------------
-// update a user by id
+// update user data
 router.patch("/users/me", auth, async (req, res) => {
   /**
    * [mongoose will ignore the foreign property on update, and will not throw an error]

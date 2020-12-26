@@ -87,6 +87,8 @@ router.get("/tasks/:id", auth, async (req, res) => {
     // get one task, but that current user have created
     const task = await Task.findOne({ _id, owner: req.user._id });
     if (!task) return res.status(404).send();
+    // this line to get user data from users collection and send it with task data in response
+    //await task.populate({path:'owner'}).execPopulate();
     res.send(task);
   } catch (e) {
     res.status(500).send();
