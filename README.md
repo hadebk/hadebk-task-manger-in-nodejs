@@ -18,7 +18,7 @@ The main goal was to work with a NoSQL database and build a simple API that coul
 - validator - used to validate fields like email
 
 ### Environment Setup And Run Locally
-1- Run npm install
+1- Run npm install\n
 2- create dev.env file in top folder directory and add this values:
     - PORT=3000
     - JWT_SECRET=YOUR_JWT_SECRET_VALUE
