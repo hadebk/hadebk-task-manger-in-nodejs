@@ -17,18 +17,21 @@ The main goal was to work with a NoSQL database and build a simple API that coul
 - sharp - used to resize avatars when saving to DB
 - validator - used to validate fields like email
 
-### Environment Setup
-To run locally you need must set up PORT.
-Ex. PORT=3000
-
-Must set up JWT_SECRET for auth must be set to unique secret value.
-Ex. JWT_SECRET=2e8n@wmeoX!hV
-
-Must set SENDGRID_API_KEY to a valid sendgrid api key to use its email capabilities.
-Ex.SENDGRID_API_KEY=YOUR_API_KEY_HERE
-
-Must set MONGOBD_URL to connect to db.
-Ex. MONGODB_URL=mongodb://127.0.0.1:27017/my-app-name
+### Environment Setup And Run Locally
+1- Run npm install
+2- create dev.env file in top folder directory and add this values:
+    - PORT=3000
+    - JWT_SECRET=YOUR_JWT_SECRET_VALUE
+    - SENDGRID_API_KEY=YOUR_API_KEY_HERE
+    - MONGODB_URL=mongodb://127.0.0.1:27017/your-app-name
+3- Create test.env file in top folder directory and add this values:#
+    - PORT=3000
+    - JWT_SECRET=YOUR_JWT_SECRET_VALUE
+    - SENDGRID_API_KEY=YOUR_API_KEY_HERE
+    - MONGODB_URL=mongodb://127.0.0.1:27017/your-app-name-test
+4- Start mongodb run: /YOUR_PATH/mongodb/bin/mongod.exe
+5- Start the project run: npm run dev
+6- To execute tests run: npm test
 
 ### What I have done in this project
 - setup express server.
