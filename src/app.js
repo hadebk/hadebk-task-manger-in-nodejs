@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 
 // to start db connection
 require("./db/mongoose");
@@ -10,6 +11,14 @@ const taskRouter = require("./routers/task");
 // server setup
 const app = express();
 const port = process.env.PORT;
+
+// Enabling CORS
+// To be able to access our API from frontend with a different origin
+var corsOptions = {
+  origin: "*",
+  optionsSuccessStatus: 200,
+};
+app.use(cors(corsOptions));
 
 // to parse coming data from server to json
 app.use(express.json());
