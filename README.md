@@ -1,8 +1,7 @@
 # task-manger-in-nodejs
 
-Create RESTFUL API to serve all operation in Task Manger App, and execute all CURD operation on MongoDB.  
-This is a back-end task manager application made with JavaScript, Node.js, Express, MongoDB and Mongoose.js. It allows you to create an account through the API and manage tasks that you can add, view, edit or delete.  
-The main goal was to work with a NoSQL database and build a simple API that could be used for a task manager application. Users can create accounts, login, logout, add and delete profile avatars as well as create and manage tasks they create. It completes all of the main objectives and I feel confident building and maintaining a NoSQL database now.
+RESTFUL API to serve all operation in Task Manger App, and execute all CURD operation on MongoDB.  
+Users can create accounts, login, logout, add and delete profile avatars as well as create and manage tasks they create.
 
 ### Technologies used
 - Node.js and Express.js to setup the server and create API routes.
@@ -18,7 +17,7 @@ The main goal was to work with a NoSQL database and build a simple API that coul
 - validator - used to validate fields like email
 
 ### Environment Setup And Run Locally
-- Run npm install  
+- `npm install`  
 - create dev.env file in top folder directory and add this values:  
     - PORT=3000  
     - JWT_SECRET=YOUR_JWT_SECRET_VALUE  
@@ -29,9 +28,9 @@ The main goal was to work with a NoSQL database and build a simple API that coul
     - JWT_SECRET=YOUR_JWT_SECRET_VALUE  
     - SENDGRID_API_KEY=YOUR_API_KEY_HERE  
     - MONGODB_URL=mongodb://127.0.0.1:27017/your-app-name-test  
-- Start mongodb run: /YOUR_PATH/mongodb/bin/mongod.exe  
-- Start the project run: npm run dev  
-- To execute tests run: npm test  
+- Download MongoDB and start it `/YOUR_PATH/mongodb/bin/mongod.exe`  
+- Start the project `npm run dev`  
+- To execute tests `npm test`  
 
 ### What I have done in this project
 - setup express server.
